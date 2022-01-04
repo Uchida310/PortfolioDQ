@@ -18,6 +18,15 @@ html{
     vertical-align: baseline;
 }
 
+.logo {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.logo img {
+    width: 20%;
+}
+
 .header-container nav {
     display: flex;
     align-items: center;
@@ -76,8 +85,8 @@ html{
 }
 
 .movie {
-    border: solid 1px #000;    	/* 内側の線になる一本線の枠線をひく*/
-	outline: solid 1px #000;    /* 外側の線になる一本線の枠線をひく*/
-	outline-offset: 1px;        /* 外側の線と内側の線の空き具合を調整*/
+    border: solid 1px #000;    	
+	outline: solid 1px #000;   
+	outline-offset: 1px;        
 	margin: 2px; 
 }
