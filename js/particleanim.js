@@ -1,73 +1,75 @@
 particlesJS("particles-js",{
-    "particles":{
-      "number":{
-        "value":30,//‚±‚Ì”’l‚ğ•ÏX‚·‚é‚Æ†á‚Ì”‚ª‘Œ¸‚Å‚«‚é
-        "density":{
-          "enable":false,
-          "value_area":400
-        }
+  "particles":{
+    "number":{
+      "value":30,//ã“ã®æ•°å€¤ã‚’å¤‰æ›´ã™ã‚‹ã¨ç´™å¹é›ªã®æ•°ãŒå¢—æ¸›ã§ãã‚‹
+      "density":{
+        "enable":false,
+        "value_area":400
+      }
+    },
+    "color": {
+        "value": ["#EA5532", "#F6AD3C", "#FFF33F", "#00A95F", "#00ADA9", "#00AFEC","#4D4398", "#E85298"]//ç´™å¹é›ªã®è‰²ã®æ•°ã‚’å¢—ã‚„ã™ã“ã¨ãŒå‡ºæ¥ã‚‹
+    },
+    "shape":{
+      "type":"star",
+      "stroke":{
+        "width":0,
+      }
+      /*"polygon":{
+        "nb_sides":5//å¤šè§’å½¢ã®è§’ã®æ•°
+      }*/
       },
-      "color": {
-          "value": ["#EA5532", "#F6AD3C", "#FFF33F", "#00A95F", "#00ADA9", "#00AFEC","#4D4398", "#E85298"]//†á‚ÌF‚Ì”‚ğ‘‚â‚·‚±‚Æ‚ªo—ˆ‚é
-      },
-      "shape":{
-        "type":"star",
-        "stroke":{
-          "width":0,
-        }
-        /*"polygon":{
-          "nb_sides":5//‘½ŠpŒ`‚ÌŠp‚Ì”
-        }*/
-        },
-        "opacity":{
-          "value":1,
-          "random":false,
-          "anim":{
-            "enable":true,
-            "speed":10,
-            "opacity_min":0,
-            "sync":false
-          }
-        },
-        "size":{
-          "value":7,
-          "random":true,//ƒTƒCƒY‚ğƒ‰ƒ“ƒ_ƒ€‚É
-          "anim":{
-            "enable":true,
-            "speed":1,
-            "size_min":0.8,
-            "sync":false
-          }
-        },
-        "line_linked":{
-          "enable":false,
-        },
-        "move":{
+      "opacity":{
+        "value":1,
+        "random":false,
+        "anim":{
           "enable":true,
-        "speed":3,//‚±‚Ì”’l‚ğ¬‚³‚­‚·‚é‚Æ‚ä‚Á‚­‚è‚È“®‚«‚É‚È‚é
-        "direction":"bottom",//‰º‚ÉŒü‚©‚Á‚Ä—‚¿‚é
-        "random":false,//“®‚«‚Íƒ‰ƒ“ƒ_ƒ€‚É‚È‚ç‚È‚¢‚æ‚¤‚É
-        "straight":false,//“®‚«‚ğ‚Æ‚Ç‚ß‚È‚¢
-        "out_mode":"out",//‰æ–Ê‚ÌŠO‚Éo‚é‚æ‚¤‚É•`Ê
-        "bounce":false,//’µ‚Ë•Ô‚è‚È‚µ
-          "attract":{
-            "enable":false,
-            "rotateX":600,
-            "rotateY":1200
-          }
+          "speed":10,
+          "opacity_min":0,
+          "sync":false
         }
       },
-      "interactivity":{
-        "detect_on":"canvas",
-        "events":{
-          "onhover":{
-            "enable":false,
-          },
-          "onclick":{
-            "enable":false,
-          },
-          "resize":true
-        },
+      "size":{
+        "value":7,
+        "random":true,//ã‚µã‚¤ã‚ºã‚’ãƒ©ãƒ³ãƒ€ãƒ ã«
+        "anim":{
+          "enable":true,
+          "speed":1,
+          "size_min":0.8,
+          "sync":false
+        }
       },
-      "retina_detect":true
-    });
+      "line_linked":{
+        "enable":false,
+      },
+      "move":{
+        "enable":true,
+      "speed":3,//ã“ã®æ•°å€¤ã‚’å°ã•ãã™ã‚‹ã¨ã‚†ã£ãã‚Šãªå‹•ãã«ãªã‚‹
+      "direction":"bottom",//ä¸‹ã«å‘ã‹ã£ã¦è½ã¡ã‚‹
+      "random":false,//å‹•ãã¯ãƒ©ãƒ³ãƒ€ãƒ ã«ãªã‚‰ãªã„ã‚ˆã†ã«
+      "straight":false,//å‹•ãã‚’ã¨ã©ã‚ãªã„
+      "out_mode":"out",//ç”»é¢ã®å¤–ã«å‡ºã‚‹ã‚ˆã†ã«æå†™
+      "bounce":false,//è·³ã­è¿”ã‚Šãªã—
+        "attract":{
+          "enable":false,
+          "rotateX":600,
+          "rotateY":1200
+        }
+      }
+    },
+    "interactivity":{
+      "detect_on":"canvas",
+      "events":{
+        "onhover":{
+          "enable":false,
+        },
+        "onclick":{
+          "enable":false,
+        },
+        "resize":true
+      },
+    },
+    "retina_detect":true
+  });
+
+  console.log("ãƒ†ã‚¹ãƒˆ");
