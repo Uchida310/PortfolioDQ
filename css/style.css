@@ -251,9 +251,15 @@ max-width:  70%;
     height: 600px;
   }
 
-  /**/
-  .slick-slide {
-      height: 30vw;
-
-      max-height: 150px;
+  /*slick.jsのcss*/
+  .slider img {
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
   }
+
+.slider02 img {
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+}
