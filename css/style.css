@@ -135,8 +135,78 @@ html{
     text-align: center;
 }
 
+.download-container {
+    background: hotpink;
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    
+}
 
+.link-texts p{
+    font-size: 40px;
+    
+}
 
+.link-texts .budge {
+    margin-top: 20px;
+}
+
+.link-texts .budge a {
+    background-size: contain;
+}
+
+.link-texts .budge img {
+    width:350px;
+    height: 180px;
+}
+.link-texts .budge1 {
+    vertical-align: middle;
+    padding-right: 20px;
+}
+.link-texts .budge2 {
+    padding: 0;
+    margin: 0;
+}
+.pop-text {
+    position: relative;
+  display: inline-block;
+  margin: 6.5em 100px 24.5em -24.5em;
+  padding: 40px 5px;
+  width: 120px;
+  height: 120px;
+  line-height: 25px;
+  text-align: center;
+  color: #FFF;
+  font-size: 15px;
+  font-weight: bold;
+  background: yellowgreen;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.pop-text::before {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    right: -8px;
+    margin-top: -15px;
+    border: 15px solid transparent;
+    border-left: 24px solid yellowgreen;
+    z-index: 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.download-image {
+    position: absolute;
+    margin-left: 70%;
+    margin-top: 100px;
+}
+
+.download-image img {
+max-width:  70%;
+}
 .thanks p {
     text-align: center;
 }
@@ -171,11 +241,11 @@ html{
     z-index:1;
     width: 100%;
     height: 100%;
+
   }
-  
   #wrapper{
-    position: relative;/*描画を#particles-jsよりも上にするためposition:relative;を指定*/
-    z-index: 1;/*z-indexの数字を大きくすることで描画を#particles-jsよりも上に*/
-    width:100%;
-    height: 100%;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 600px;
   }
