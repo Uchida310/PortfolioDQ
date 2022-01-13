@@ -13,10 +13,17 @@ a {
     text-decoration: none;
 }
 
-html{
-    font-size: 16px;
+
+
+@font-face {
+    font-family: 'main-font';
+    src: url('../font/M_PLUS_1p/MPLUS1p-Medium.ttf');
 }
 
+html{
+    font-size: 16px;
+    font-family: 'main-font';
+}
 /*
 
 ヘッダーコンテナーのCSSここから
@@ -56,11 +63,7 @@ html{
     padding-right: 25px;
 }
 
-.header-container nav a:last-child{
-    border-radius: 32px;
-    padding: 16px 30px;
-    height: 64px;
-}
+
 /*
 
 ヘッダーコンテナーのCSSここまで
@@ -81,6 +84,16 @@ html{
  align-items: center;
  text-align: center;
  background: chartreuse;
+ margin-bottom: 60px;
+}
+
+.hero-container h2 {
+    font-weight: 200;
+}
+
+.hero-container h1 {
+    font-weight: 900;
+    font-size: 2.6em;
 }
 
 .hero-container video {
@@ -131,25 +144,25 @@ html{
     text-align: center;
 }
 
-.imageText-intro {
+.imagetext-intro {
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
+    padding:40px 0;
 }
 
 .line-top hr {
     width: 200px;
     border: 0;
     border-bottom: 4px solid #333;
-    margin-top: 100px;
     margin-left: 30px;
     padding: 0;
     transform: rotate(-20deg);
 }
 
 .text-intro h2{
-    margin: 100px 70px;
+    margin: 120px 70px;
 }
 
 .line-bottom hr {
@@ -206,13 +219,7 @@ html{
     font-size: 1.2em;
 }
 
-.download-container {
-    background: hotpink;
-    display: flex;
-    position: relative;
-    justify-content: space-evenly;
-    
-}
+
 
 /*
 
@@ -227,9 +234,20 @@ html{
 
 
 */
+.download-container {
+    background: hotpink;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.link-texts {
+    margin-top: 160px;
+    margin-right: 200px;
+}
 
 .link-texts p{
-    font-size: 3.2em;
+    font-size: 2.2em;
     
 }
 
@@ -253,21 +271,25 @@ html{
     padding: 0;
     margin: 0;
 }
+
+.download-image{
+  
+}
+
 .pop-text {
-    position: relative;
-  display: inline-block;
-  margin: 6.5em 100px 24.5em -24.5em;
+ position: relative;
   padding: 40px 5px;
-  width: 120px;
-  height: 120px;
-  line-height: 25px;
+  width: 150px;
+  height: 150px;
+  line-height: 40px;
   text-align: center;
   color: #FFF;
-  font-size: 15px;
+  font-size: 1.5em;
   font-weight: bold;
   background: yellowgreen;
   border-radius: 50%;
-  box-sizing: border-box;
+  margin-top: 100px;
+  margin-left: -90px;
 }
 
 .pop-text::before {
@@ -283,16 +305,10 @@ html{
     transform: rotate(45deg);
 }
 
-.download-image {
-    position: absolute;
-    right: 0px;
-    margin-top: 100px;
-}
-
 .download-image img {
- width:  100%;
+    margin-top: -120px;
+    width: 80%;
 }
-
 /*
 
 ダウンロードのCSSここまで
