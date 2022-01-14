@@ -23,6 +23,7 @@ a {
 html{
     font-size: 16px;
     font-family: 'main-font';
+    background: #F4F5F7;
 }
 /*
 
@@ -31,7 +32,6 @@ html{
 
 */
 .header-container {
-    background: chocolate;
     display: flex;
     justify-content: space-between;
     vertical-align: baseline;
@@ -48,19 +48,12 @@ html{
 
 .header-container nav {
     display: flex;
-    align-items: center;
+    margin-top: 20px;
+   
 }
 
-.header-container nav a {
-    margin: 8px;
-    border: 5px solid #000 ;
-    border-radius: 50%;
-    padding: 15px;
-}
-
-.header-container nav a:nth-child(3){
-    padding-left: 25px;
-    padding-right: 25px;
+nav a {
+    margin: 0 10px 0 10px;
 }
 
 
@@ -83,8 +76,8 @@ html{
  padding-top: 60px;
  align-items: center;
  text-align: center;
- background: chartreuse;
  margin-bottom: 60px;
+ margin-top: -110px;
 }
 
 .hero-container h2 {
@@ -137,7 +130,6 @@ html{
 */
 
 .intro-container {
-    background: yellowgreen;
 }
 
 .img-intro {
@@ -191,7 +183,6 @@ html{
 
 */
 .eventProduce-container {
-    background: navajowhite;
     text-align: center;
     padding-bottom: 100px;
 }
@@ -235,10 +226,11 @@ html{
 
 */
 .download-container {
-    background: hotpink;
+    max-width: 1200px;
     display: flex;
     justify-content: flex-end;
-
+    margin-left: auto;
+margin-right: 0px;
 }
 
 .link-texts {
@@ -251,8 +243,11 @@ html{
     
 }
 
+
+
 .link-texts .budge {
     margin-top: 20px;
+    display: flex;
 }
 
 .link-texts .budge a {

@@ -1,4 +1,5 @@
-$('.slider').slick({
+function slickLoad() {
+  $('.slider').slick({
     autoplay: true, //自動でスクロール
     autoplaySpeed: 0, //自動再生のスライド切り替えまでの時間を設定
     speed: 5000, //スライドが流れる速度を設定
@@ -16,9 +17,9 @@ $('.slider').slick({
         }
       }
     ]
-});
+  });
 
-$('.slider02').slick({
+  $('.slider02').slick({
     autoplay: true, //自動でスクロール
     autoplaySpeed: 0, //自動再生のスライド切り替えまでの時間を設定
     speed: 5000, //スライドが流れる速度を設定
@@ -37,4 +38,11 @@ $('.slider02').slick({
         }
       }
     ]
+  });
+}
+
+$(window).on('load',slickLoad());
+
+$(window).resize( ()=>{
+  console.log("aaaa");
 });

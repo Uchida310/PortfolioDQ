@@ -1,14 +1,14 @@
 particlesJS("particles-js",{
   "particles":{
     "number":{
-      "value":30,//この数値を変更すると紙吹雪の数が増減できる
+      "value":30,//こ�?�数値を変更すると紙吹雪の数が増減できる
       "density":{
         "enable":false,
         "value_area":400
       }
     },
     "color": {
-        "value": ["#EA5532", "#F6AD3C", "#FFF33F", "#00A95F", "#00ADA9", "#00AFEC","#4D4398", "#E85298"]//紙吹雪の色の数を増やすことが出来る
+        "value": ["#EA5532", "#F6AD3C", "#FFF33F", "#00A95F", "#00ADA9", "#00AFEC","#4D4398", "#E85298"]//紙吹雪の色の数を増やすことが�?�来�?
     },
     "shape":{
       "type":"star",
@@ -16,7 +16,7 @@ particlesJS("particles-js",{
         "width":0,
       }
       /*"polygon":{
-        "nb_sides":5//多角形の角の数
+        "nb_sides":5//多角形の角�?�数
       }*/
       },
       "opacity":{
@@ -31,7 +31,7 @@ particlesJS("particles-js",{
       },
       "size":{
         "value":7,
-        "random":true,//サイズをランダムに
+        "random":true,//サイズをランダ�?に
         "anim":{
           "enable":true,
           "speed":1,
@@ -44,12 +44,12 @@ particlesJS("particles-js",{
       },
       "move":{
         "enable":true,
-      "speed":3,//この数値を小さくするとゆっくりな動きになる
-      "direction":"bottom",//下に向かって落ちる
-      "random":false,//動きはランダムにならないように
-      "straight":false,//動きをとどめない
-      "out_mode":"out",//画面の外に出るように描写
-      "bounce":false,//跳ね返りなし
+      "speed":3,//こ�?�数値を小さくすると�?っくりな動きにな�?
+      "direction":"bottom",//下に向かって落ち�?
+      "random":false,//動きはランダ�?にならな�?ように
+      "straight":false,//動きをとどめな�?
+      "out_mode":"out",//画面の外に出るよ�?に描�??
+      "bounce":false,//跳ね返りな�?
         "attract":{
           "enable":false,
           "rotateX":600,
@@ -71,5 +71,3 @@ particlesJS("particles-js",{
     },
     "retina_detect":true
   });
-
-  console.log("テスト");
