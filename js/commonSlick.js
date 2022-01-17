@@ -44,5 +44,5 @@ function slickLoad() {
 $(window).on('load',slickLoad());
 
 $(window).resize( ()=>{
-  console.log("aaaa");
+  location.reload();
 });
