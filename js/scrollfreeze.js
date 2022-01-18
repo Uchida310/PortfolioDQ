@@ -2,19 +2,22 @@
 $(() => {
     //スクロール量
     let scroll_y = window.scrollY;
+  
     //処理を1度のみ実行させるためのフラグ
     let cnt = 0;
     //止めたい位置までの距離を取得
-    const stopPosition = $('.intro-container').offset().top - 100;
+    const stopPosition = $('.intro-container').offset().top;
     //スクロール位置修正をスムーズに
     const scrollSpeed = 600;
+    //topからintro-container終了までの距離
+    const toIntroWidth = 1300;
 
     //スクロールする度に実行
     $(window).on("scroll", () => {
         scroll_y = window.scrollY;
 
-        //止めたい位置をスクロールが超えた愛（触れた場合）
-        if (scroll_y > stopPosition) {
+        //止めたい位置をスクロールが超えた場合かつ、intro範囲内の場合
+        if (scroll_y > stopPosition && scroll_y < toIntroWidth) {
             if (cnt == 0) {
                 //if条件をスクロール次第では2度実行されてしまうのでインクリメントしておく
                 cnt++;
@@ -42,3 +45,10 @@ function stopScroll() {
         });
     });
 }
+
+/**
+ * 
+ * 
+ * 
+ * 
+ */
