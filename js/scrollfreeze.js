@@ -8,35 +8,42 @@ $(window).ready(() => {
 
     //止めたい位置までの距離を取得(offsetで値確認)
     const stopPosition = 750;
-
+    //js適用幅
+    const maxWidth = 959;
+    //ユーザーの画面幅を取得
+    const userWidth = $(window).width();
+    console.log(userWidth);
     //スクロール位置修正をスムーズに
     const scrollSpeed = 600;
     //topからintro-container終了までの距離
-    const toIntroWidth = 1300;
+    const toIntroHeight = 1300;
 
-    //スクロールする度に実行
-    $(window).on("scroll", () => {
-        scroll_y = window.scrollY;
+    //もし幅が959px以上であればスクロールする度に実行
 
-        //止めたい位置をスクロールが超えた場合かつ、intro範囲内の場合
-        if (scroll_y > stopPosition && scroll_y < toIntroWidth) {
-            if (cnt == 0) {
-                //if条件をスクロール次第では2度実行されてしまうのでインクリメントしておく
-                cnt++;
-                //スクロールオーバー時に修正するアニメーション
-                $("html, body").animate({ scrollTop: stopPosition }, scrollSpeed);
-                //画面を固定 
-                $('body').css({ 'overflow': 'hidden' });
-                stopScroll();
+    if(maxWidth <= userWidth) {
+        $(window).on("scroll", () => {
+            scroll_y = window.scrollY;
+
+            //止めたい位置をスクロールが超えた場合かつ、intro範囲内の場合
+            if (scroll_y > stopPosition && scroll_y < toIntroHeight) {
+                if (cnt == 0) {
+                    //if条件をスクロール次第では2度実行されてしまうのでインクリメントしておく
+                    cnt++;
+                    //スクロールオーバー時に修正するアニメーション
+                    $("html, body").animate({ scrollTop: stopPosition }, scrollSpeed);
+                    //画面を固定 
+                    $('body').css({ 'overflow': 'hidden' });
+                    stopScroll();
+                }
             }
-        }
-    });
+        });
+    }
 });
 
 
 //テキスト切り替えと固定解除のメソッド
 function stopScroll() {
-    
+
     $('.text-intro').on('click', () => {
         $('.text-intro h2').text('スキルを使って敵を一掃！');
         $('.text-intro').on('click', () => {

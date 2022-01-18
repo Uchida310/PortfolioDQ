@@ -177,6 +177,7 @@ nav a {
     transform: rotate(-20deg);
 }
 
+
 .text-intro h2{
     margin: 120px 70px;
 }
@@ -192,6 +193,26 @@ nav a {
 }
 
 @media (max-width: 959px) {
+
+    .intro-container {
+        padding-bottom: 0;
+    }
+    .imagetext-intro {
+        flex-direction: column;
+        font-size: 2.1em;
+    
+    }
+
+    .text-intro{
+        display: flex;
+        max-height: 150px;
+        align-items: center;
+    }
+
+    hr {
+        display: none;
+    }
+    
     .text-intro h2{
         font-size: 1em;
     }
