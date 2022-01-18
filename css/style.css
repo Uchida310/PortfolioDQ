@@ -25,6 +25,12 @@ html{
     font-family: 'main-font';
     background: #F4F5F7;
 }
+
+@media (max-width: 959px) {
+    html{
+        font-size: 12px;
+    }
+}
 /*
 
 ヘッダーコンテナーのCSSここから
@@ -51,6 +57,13 @@ html{
     margin-top: 20px;
    
 }
+
+@media (max-width: 959px) {
+    .header-container nav {
+        display: none;
+    }
+}
+
 
 nav a {
     margin: 0 10px 0 10px;
@@ -92,6 +105,12 @@ nav a {
 .hero-container video {
     border: 10px solid #000;
     border-radius: 1em;
+}
+
+@media (max-width: 959px) {
+    .hero-container video {
+        max-width: 350px;
+    }
 }
 
 .budge {
@@ -150,7 +169,7 @@ nav a {
 }
 
 .line-top hr {
-    width: 200px;
+    max-width: 200px;
     border: 0;
     border-bottom: 4px solid #333;
     margin-left: 30px;
@@ -163,13 +182,19 @@ nav a {
 }
 
 .line-bottom hr {
-    width: 200px;
+    max-width: 200px;
     border: 0;
     border-top: 4px solid #333;
     margin-top: 100px;
     margin-left: 30px;
     padding: 0;
     transform: rotate(20deg);
+}
+
+@media (max-width: 959px) {
+    .text-intro h2{
+        font-size: 1em;
+    }
 }
 
 
@@ -195,6 +220,11 @@ nav a {
 .play-movies {
     display: flex;
     justify-content: center;
+}
+@media (max-width: 959px) {
+    .play-movies{
+        flex-flow: column;
+    }
 }
 
 .play-movies .movie:nth-child(2){
@@ -233,10 +263,18 @@ nav a {
 .download-container {
     max-width: 1200px;
     display: flex;
-    justify-content: flex-end;
-    margin-left: auto;
-    margin-right: 0px;
+    justify-content: center;
+    margin: 0 auto;
     margin-bottom: 60px;
+}
+
+@media (max-width: 959px) {
+    .download-container {
+        flex-flow: column;
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin: 0 auto;
+    }
 }
 
 .link-texts {
@@ -246,7 +284,6 @@ nav a {
 
 .link-texts p{
     font-size: 2.2em;
-    
 }
 
 
@@ -289,6 +326,24 @@ nav a {
   margin-left: -90px;
 }
 
+@media (max-width: 959px) {
+    .pop-text {
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    padding: 29px 5px;
+    width: 320px;
+    height: 150px;
+    line-height: 49px;
+    color: #FFF;
+    font-size: 2.8em;
+    }
+
+    .pop-text::before {
+        display: none;
+    }
+}
+
 .pop-text::before {
     content: "";
     position: absolute;
@@ -305,6 +360,18 @@ nav a {
 .download-image img {
     margin-top: -120px;
     width: 80%;
+}
+
+@media (max-width: 959px) {
+
+    .download-image {
+        text-align: center;
+    }
+
+    .download-image img {
+        margin-top: 10px;
+        max-width: 300px;
+    }
 }
 /*
 
