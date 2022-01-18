@@ -2,11 +2,13 @@
 $(window).ready(() => {
     //スクロール量
     let scroll_y = window.scrollY;
-  
+
     //処理を1度のみ実行させるためのフラグ
     let cnt = 0;
-    //止めたい位置までの距離を取得
-    const stopPosition = $('.intro-container').offset().top;
+
+    //止めたい位置までの距離を取得(offsetで値確認)
+    const stopPosition = 750;
+
     //スクロール位置修正をスムーズに
     const scrollSpeed = 600;
     //topからintro-container終了までの距離
@@ -22,7 +24,7 @@ $(window).ready(() => {
                 //if条件をスクロール次第では2度実行されてしまうのでインクリメントしておく
                 cnt++;
                 //スクロールオーバー時に修正するアニメーション
-                $("html, body").animate({scrollTop: stopPosition},scrollSpeed);
+                $("html, body").animate({ scrollTop: stopPosition }, scrollSpeed);
                 //画面を固定 
                 $('body').css({ 'overflow': 'hidden' });
                 stopScroll();
@@ -34,6 +36,7 @@ $(window).ready(() => {
 
 //テキスト切り替えと固定解除のメソッド
 function stopScroll() {
+    
     $('.text-intro').on('click', () => {
         $('.text-intro h2').text('スキルを使って敵を一掃！');
         $('.text-intro').on('click', () => {
@@ -47,8 +50,8 @@ function stopScroll() {
 }
 
 /**
- * 
- * 
- * 
- * 
+ *
+ *
+ *
+ *
  */
