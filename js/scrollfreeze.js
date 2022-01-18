@@ -1,5 +1,5 @@
 
-$(() => {
+$(window).ready(() => {
     //スクロール量
     let scroll_y = window.scrollY;
   
