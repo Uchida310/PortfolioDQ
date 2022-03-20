@@ -150,17 +150,18 @@ nav a {
 
 .intro-container {
     cursor: pointer;
-    padding-top: 50px;
-    padding-bottom: 50px;
     background: #99FF66;
-
+    height: 100vh;
+    position: relative;
+    
 }
 
-.img-intro {
-    text-align: center;
-}
 
 .imagetext-intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+     transform: translateY(-50%) translateX(-50%);
     display: flex;
     text-align: center;
     align-items: center;

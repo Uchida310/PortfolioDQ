@@ -1,0 +1,542 @@
+/*
+
+ initialaizeのCSSここから
+
+
+*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+
+
+
+@font-face {
+    font-family: 'main-font';
+    src: url('../font/M_PLUS_1p/MPLUS1p-Medium.ttf');
+}
+
+html{
+    font-size: 16px;
+    font-family: 'main-font';
+    background: #F4F5F7;
+}
+
+@media (max-width: 959px) {
+    html{
+        font-size: 12px;
+    }
+}
+/*
+
+ヘッダーコンテナーのCSSここから
+
+
+*/
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: baseline;
+}
+
+.logo {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.logo img {
+    width: 20%;
+}
+
+.header-container nav {
+    display: flex;
+    margin-top: 20px;
+   
+}
+
+@media (max-width: 959px) {
+    .header-container nav {
+        display: none;
+    }
+}
+
+
+nav a {
+    margin: 0 10px 0 10px;
+}
+
+
+/*
+
+ヘッダーコンテナーのCSSここまで
+
+
+*/
+
+/*
+
+ヒーローコンテナーのCSSここから
+
+
+*/
+
+
+.hero-container {
+ padding-top: 60px;
+ align-items: center;
+ text-align: center;
+ margin-bottom: 60px;
+ margin-top: -110px;
+}
+
+.hero-container h2 {
+    font-weight: 200;
+}
+
+.hero-container h1 {
+    font-weight: 900;
+    font-size: 2.6em;
+}
+
+.hero-container video {
+    border: 10px solid #000;
+    border-radius: 1em;
+}
+
+@media (max-width: 959px) {
+    .hero-container video {
+        max-width: 350px;
+    }
+}
+
+.budge {
+    margin-top: 20px;
+}
+
+.budge a {
+    background-size: contain;
+}
+
+.budge img {
+    width:190px;
+    height: 70px;
+}
+.budge1 {
+    vertical-align: middle;
+    padding-right: 20px;
+}
+.budge2 {
+    padding: 0;
+    margin: 0;
+}
+
+/*
+
+ヒーローコンテナーのCSSここまで
+
+
+*/
+
+/*
+
+イントロコンテナーのCSSここから
+
+
+*/
+
+.intro-container {
+    cursor: pointer;
+    background: #99FF66;
+    height: 100vh;
+    position: relative;
+    
+}
+
+
+.imagetext-intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+     transform: translateY(-50%) translateX(-50%);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding:40px 0;
+}
+
+.line-top hr {
+    max-width: 200px;
+    border: 0;
+    border-bottom: 4px solid #333;
+    margin-left: 30px;
+    padding: 0;
+    transform: rotate(-20deg);
+}
+
+
+.text-intro h2{
+    margin: 120px 70px;
+}
+
+.line-bottom hr {
+    max-width: 200px;
+    border: 0;
+    border-top: 4px solid #333;
+    margin-top: 100px;
+    margin-left: 30px;
+    padding: 0;
+    transform: rotate(20deg);
+}
+
+@media (max-width: 959px) {
+
+    .intro-container {
+        padding-bottom: 0;
+    }
+    .imagetext-intro {
+        flex-direction: column;
+        font-size: 2.1em;
+    
+    }
+
+    .text-intro{
+        display: flex;
+        max-height: 150px;
+        align-items: center;
+    }
+
+    hr {
+        display: none;
+    }
+    
+    .text-intro h2{
+        font-size: 1em;
+    }
+}
+
+
+/*
+
+イントロコンテナーのCSSここまで
+
+
+*/
+
+
+/*
+
+イベントコンテナーのCSSはここから
+
+
+*/
+.eventProduce-container {
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.play-movies {
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 959px) {
+    .play-movies{
+        flex-flow: column;
+    }
+}
+
+.play-movies .movie:nth-child(2){
+    margin: 0px 80px;
+}
+
+.movie img {
+    width: 250px;
+    border: solid 1px #000;    	
+	outline: solid 1px #000;   
+	outline-offset: 2px;
+    border-radius: 2%;
+    margin-bottom: 20px;         
+}
+
+.movie p {
+    font-weight: 1000;
+    font-size: 1.2em;
+}
+
+@media (max-width: 959px) {
+    .movie{
+        margin-top: 60px;
+        margin-left: 0px;
+    }
+    .play-movies .movie:nth-child(2){
+        margin: 60px 0px 0px 0px;
+    }
+}
+
+
+
+/*
+
+イベントコンテナーのCSSはここまで
+
+
+*/
+
+/*
+
+ダウンロード案内のCSSここから
+
+
+*/
+.download-container {
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+@media (max-width: 959px) {
+    .download-container {
+        flex-flow: column;
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin: 0 auto;
+    }
+}
+
+.link-texts {
+    margin-top: 160px;
+    margin-right: 200px;
+}
+
+.link-texts p{
+    font-size: 2.2em;
+}
+
+
+
+.link-texts .budge {
+    margin-top: 20px;
+    display: flex;
+}
+
+.link-texts .budge a {
+    background-size: contain;
+}
+
+.link-texts .budge img {
+    width:260px;
+    height: 130px;
+}
+.link-texts .budge1 {
+    vertical-align: middle;
+    padding-right: 20px;
+}
+.link-texts .budge2 {
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 959px) {
+
+    .link-texts {
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+    .link-texts p {
+        text-align: center;
+    }
+
+    .link-texts .budge {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+.pop-text {
+ position: relative;
+  padding: 40px 5px;
+  width: 150px;
+  height: 150px;
+  line-height: 40px;
+  text-align: center;
+  color: #FFF;
+  font-size: 1.5em;
+  font-weight: bold;
+  background: yellowgreen;
+  border-radius: 50%;
+  margin-top: 100px;
+  margin-left: -90px;
+}
+
+@media (max-width: 959px) {
+    .pop-text {
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    padding: 29px 5px;
+    width: 320px;
+    height: 150px;
+    line-height: 49px;
+    color: #FFF;
+    font-size: 2.8em;
+    }
+
+    .pop-text::before {
+        display: none;
+    }
+}
+
+.pop-text::before {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    right: -8px;
+    margin-top: -15px;
+    border: 15px solid transparent;
+    border-left: 24px solid yellowgreen;
+    z-index: 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.download-image img {
+    margin-top: -120px;
+    width: 80%;
+}
+
+@media (max-width: 959px) {
+
+    .download-image {
+        text-align: center;
+    }
+
+    .download-image img {
+        margin-top: 10px;
+        max-width: 300px;
+    }
+}
+/*
+
+ダウンロードのCSSここまで
+
+
+*/
+
+/*
+
+モンスターのこころのCSS
+
+
+*/
+.monster-soul-container {
+    text-align: center;
+}
+
+.soul-text {
+    background: #FF69A3;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.soul-text h1{
+    margin: 0;
+    padding: 0;
+}
+
+/*
+
+フッターーCSS
+
+
+*/
+
+.sns {
+    display: none;
+}
+
+@media (max-width: 959px) {
+
+    .sns {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px 0px;
+    }
+}
+
+.thanks {
+    text-align: center;
+}
+
+.thanks-hero {
+    font-size: 2em;
+}
+
+.copylight {
+    font-size: 1.5em;
+}
+
+.author {
+    font-size: 1em;
+}
+
+.return-top {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.return-top a {
+    display: inline-block;
+    padding: 10px 60px 10px 60px;
+    background: #808080;
+    border-radius: 30px 30px 0 0;
+    font-size: 1.25rem;
+    text-align: center;
+    color: #ffffff;
+    opacity: .5;
+}
+
+
+
+/*========= レイアウトのためのCSS ===============*/
+
+  
+  /*========= particle js を描画するエリア設定 ===============*/
+  
+  #particles-js{ 
+    position:absolute;
+    z-index:1;
+    width: 100%;
+    height: 700px;
+
+  }
+  #wrapper{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+  }
+
+  /*slick.jsのcss*/
+  .slider img {
+    margin-top: 60px;
+    width: 100px;
+    height: 100px;
+  }
+
+.slider02 img {
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+/*=========================================*/
